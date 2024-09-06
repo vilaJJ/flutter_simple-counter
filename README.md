@@ -1,2 +1,3 @@
 # flutter_simple-counter
-A simple counter, made on Flutter.
+
+A simple counter with minimum and maximum value to increased/decreased.
