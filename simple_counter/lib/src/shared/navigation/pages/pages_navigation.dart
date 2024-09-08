@@ -1,5 +1,6 @@
 import 'package:get/route_manager.dart';
 import 'package:simple_counter/src/features/counter/pages/counter_page.dart';
+import 'package:simple_counter/src/shared/navigation/bindings/bindings_navigation.dart';
 import 'package:simple_counter/src/shared/navigation/routes/routes_navigation.dart';
 
 class PagesNavigation {
@@ -14,5 +15,6 @@ class PagesNavigation {
   static GetPage<CounterPage> get _counter => GetPage(
         name: RoutesNavigation.counter,
         page: () => const CounterPage(),
+        binding: BindingsNavigation.counter,
       );
 }
