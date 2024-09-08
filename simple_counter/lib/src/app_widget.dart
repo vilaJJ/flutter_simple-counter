@@ -17,7 +17,7 @@ class AppWidget extends StatelessWidget {
     ]);
 
     return GetMaterialApp(
-      title: "Simple Counter",
+      title: "Contador",
       supportedLocales: const <Locale>[
         Locale("pt", "BR"),
       ],
