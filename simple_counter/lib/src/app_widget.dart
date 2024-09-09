@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/route_manager.dart';
+import 'package:simple_counter/src/shared/app/initializing/initializing_app.dart';
 import 'package:simple_counter/src/shared/navigation/bindings/bindings_navigation.dart';
 import 'package:simple_counter/src/shared/navigation/pages/pages_navigation.dart';
 import 'package:simple_counter/src/shared/navigation/routes/routes_navigation.dart';
@@ -12,6 +13,10 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    InitializingApp.instance.addAssetImagesOnCache(
+      context: context,
+    );
+
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
     ]);
